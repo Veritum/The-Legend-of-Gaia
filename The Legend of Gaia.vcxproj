@@ -22,12 +22,18 @@
   <ItemGroup>
     <ClCompile Include="src\core\eventloop.cpp" />
     <ClCompile Include="src\core\window.cpp" />
+    <ClCompile Include="src\gfx\renderer.cpp" />
+    <ClCompile Include="src\gfx\texture\texture.cpp" />
+    <ClCompile Include="src\gfx\ttf\ttf.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common.h" />
     <ClInclude Include="src\core\eventloop.h" />
     <ClInclude Include="src\core\window.h" />
+    <ClInclude Include="src\gfx\renderer.h" />
+    <ClInclude Include="src\gfx\texture\texture.h" />
+    <ClInclude Include="src\gfx\ttf\ttf.h" />
     <ClInclude Include="src\main.h" />
   </ItemGroup>
   <ItemGroup>
@@ -86,8 +92,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\The Legend of Gaia\The Legend of Gaia\src\util;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends\vulkan;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui;D:\The Legend of Gaia\The Legend of Gaia\extlib;D:\The Legend of Gaia\The Legend of Gaia\src\core;D:\The Legend of Gaia\The Legend of Gaia\src;$(IncludePath)</IncludePath>
-    <SourcePath>D:\The Legend of Gaia\The Legend of Gaia\src\util;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends\vulkan;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui;D:\The Legend of Gaia\The Legend of Gaia\src\core;D:\The Legend of Gaia\The Legend of Gaia\src;$(SourcePath)</SourcePath>
+    <IncludePath>D:\The Legend of Gaia\The Legend of Gaia\src\gfx;D:\The Legend of Gaia\The Legend of Gaia\src\util;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends\vulkan;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui;D:\The Legend of Gaia\The Legend of Gaia\extlib;D:\The Legend of Gaia\The Legend of Gaia\src\core;D:\The Legend of Gaia\The Legend of Gaia\src;$(IncludePath)</IncludePath>
+    <SourcePath>D:\The Legend of Gaia\The Legend of Gaia\src\gfx;D:\The Legend of Gaia\The Legend of Gaia\src\util;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends\vulkan;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui\backends;D:\The Legend of Gaia\The Legend of Gaia\extlib\imgui;D:\The Legend of Gaia\The Legend of Gaia\src\core;D:\The Legend of Gaia\The Legend of Gaia\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
